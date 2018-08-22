@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mpB-av-wpK">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeVC-->
+        <scene sceneID="lJl-yv-Vl8">
+            <objects>
+                <viewController id="mpB-av-wpK" customClass="HomeVC" customModule="TaskBuddy2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KfD-nF-YmO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mongo" translatesAutoresizingMaskIntoConstraints="NO" id="x8m-45-ZHR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TaskBuddy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QkP-6l-fZ7">
+                                <rect key="frame" x="16" y="60" width="288" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5GI-e8-wcV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="36"/>
+                                <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nef-fp-t29">
+                                <rect key="frame" x="75.5" y="484" width="169" height="44"/>
+                                <color key="backgroundColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="169" id="RRg-Te-TVU"/>
+                                    <constraint firstAttribute="height" constant="44" id="fVk-6g-5EE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <color key="tintColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Add New User"/>
+                                <connections>
+                                    <action selector="addNewUserTapped:" destination="mpB-av-wpK" eventType="touchUpInside" id="58c-vN-0iV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Current Users" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bc7-hh-hSy">
+                                <rect key="frame" x="81" y="270" width="159" height="28"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VcY-PY-EA5">
+                                <rect key="frame" x="40" y="134" width="240" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="HHa-1L-7vi"/>
+                                    <constraint firstAttribute="height" constant="300" id="OOI-1k-pXR"/>
+                                </constraints>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KNo-j3-x2b" firstAttribute="trailing" secondItem="QkP-6l-fZ7" secondAttribute="trailing" constant="16" id="3Xh-ag-OiM"/>
+                            <constraint firstItem="KNo-j3-x2b" firstAttribute="bottom" secondItem="nef-fp-t29" secondAttribute="bottom" constant="40" id="5hl-1S-kIy"/>
+                            <constraint firstItem="VcY-PY-EA5" firstAttribute="centerX" secondItem="KfD-nF-YmO" secondAttribute="centerX" id="BW1-Tv-HGF"/>
+                            <constraint firstItem="x8m-45-ZHR" firstAttribute="trailing" secondItem="KNo-j3-x2b" secondAttribute="trailing" id="DFL-Cg-MtF"/>
+                            <constraint firstItem="QkP-6l-fZ7" firstAttribute="top" secondItem="KNo-j3-x2b" secondAttribute="top" constant="40" id="LXT-l0-Hjb"/>
+                            <constraint firstItem="x8m-45-ZHR" firstAttribute="leading" secondItem="KNo-j3-x2b" secondAttribute="leading" id="QAA-of-aVS"/>
+                            <constraint firstItem="VcY-PY-EA5" firstAttribute="centerY" secondItem="KfD-nF-YmO" secondAttribute="centerY" id="emd-6P-fog"/>
+                            <constraint firstItem="x8m-45-ZHR" firstAttribute="bottom" secondItem="KNo-j3-x2b" secondAttribute="bottom" id="izG-bN-7nO"/>
+                            <constraint firstItem="x8m-45-ZHR" firstAttribute="top" secondItem="KfD-nF-YmO" secondAttribute="top" id="kBN-qP-YTZ"/>
+                            <constraint firstItem="nef-fp-t29" firstAttribute="centerX" secondItem="KfD-nF-YmO" secondAttribute="centerX" id="pX3-fA-q0O"/>
+                            <constraint firstItem="bc7-hh-hSy" firstAttribute="centerX" secondItem="KfD-nF-YmO" secondAttribute="centerX" id="qtQ-ZC-8be"/>
+                            <constraint firstItem="QkP-6l-fZ7" firstAttribute="leading" secondItem="KNo-j3-x2b" secondAttribute="leading" constant="16" id="w2P-IV-o8Q"/>
+                            <constraint firstItem="bc7-hh-hSy" firstAttribute="centerY" secondItem="KfD-nF-YmO" secondAttribute="centerY" id="xds-Cd-gQV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KNo-j3-x2b"/>
+                    </view>
+                    <connections>
+                        <outlet property="noCurrentUsersLabel" destination="bc7-hh-hSy" id="nqw-dy-dOx"/>
+                        <outlet property="userTableView" destination="VcY-PY-EA5" id="sB9-6h-T5m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1u9-T6-EJ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="157.5" y="-62.323943661971832"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mongo" width="2250" height="3000"/>
+    </resources>
+</document>
