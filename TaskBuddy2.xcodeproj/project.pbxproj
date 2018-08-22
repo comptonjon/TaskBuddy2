@@ -14,6 +14,16 @@
 		B127736A212D579100B443E1 /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1277366212D579100B443E1 /* Task+CoreDataProperties.swift */; };
 		B127736B212D579100B443E1 /* TBUser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1277367212D579100B443E1 /* TBUser+CoreDataClass.swift */; };
 		B127736C212D579100B443E1 /* TBUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1277368212D579100B443E1 /* TBUser+CoreDataProperties.swift */; };
+		B127736E212D59F800B443E1 /* CreateUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B127736D212D59F800B443E1 /* CreateUserVC.swift */; };
+		B1277370212D5F3800B443E1 /* TBUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B127736F212D5F3800B443E1 /* TBUserManager.swift */; };
+		B1277372212D6D7200B443E1 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1277371212D6D7200B443E1 /* UserCell.swift */; };
+		B1277374212D74BB00B443E1 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1277373212D74BB00B443E1 /* LoginVC.swift */; };
+		B1277376212D81D500B443E1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1277375212D81D500B443E1 /* StoreKit.framework */; };
+		B1277378212D862500B443E1 /* MasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1277377212D862500B443E1 /* MasterVC.swift */; };
+		B127737A212D870500B443E1 /* PrimarySplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1277379212D870500B443E1 /* PrimarySplitViewController.swift */; };
+		B127737C212D892B00B443E1 /* IAPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B127737B212D892B00B443E1 /* IAPService.swift */; };
+		B127737E212D950500B443E1 /* AuthTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B127737D212D950500B443E1 /* AuthTestVC.swift */; };
+		B1277380212E03E500B443E1 /* TaskDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B127737F212E03E500B443E1 /* TaskDetailVC.swift */; };
 		B1B8AA4C21110D8E00FFCE7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B8AA4B21110D8E00FFCE7C /* AppDelegate.swift */; };
 		B1B8AA5121110D8E00FFCE7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1B8AA4F21110D8E00FFCE7C /* Main.storyboard */; };
 		B1B8AA5421110D8E00FFCE7C /* TaskBuddy2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1B8AA5221110D8E00FFCE7C /* TaskBuddy2.xcdatamodeld */; };
@@ -55,6 +65,16 @@
 		B1277366212D579100B443E1 /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B1277367212D579100B443E1 /* TBUser+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TBUser+CoreDataClass.swift"; sourceTree = "<group>"; };
 		B1277368212D579100B443E1 /* TBUser+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TBUser+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B127736D212D59F800B443E1 /* CreateUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserVC.swift; sourceTree = "<group>"; };
+		B127736F212D5F3800B443E1 /* TBUserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBUserManager.swift; sourceTree = "<group>"; };
+		B1277371212D6D7200B443E1 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		B1277373212D74BB00B443E1 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		B1277375212D81D500B443E1 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		B1277377212D862500B443E1 /* MasterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterVC.swift; sourceTree = "<group>"; };
+		B1277379212D870500B443E1 /* PrimarySplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimarySplitViewController.swift; sourceTree = "<group>"; };
+		B127737B212D892B00B443E1 /* IAPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPService.swift; sourceTree = "<group>"; };
+		B127737D212D950500B443E1 /* AuthTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTestVC.swift; sourceTree = "<group>"; };
+		B127737F212E03E500B443E1 /* TaskDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailVC.swift; sourceTree = "<group>"; };
 		B1B8AA4821110D8E00FFCE7C /* TaskBuddy2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskBuddy2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1B8AA4B21110D8E00FFCE7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1B8AA5021110D8E00FFCE7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -81,6 +101,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0DD8052746CE3F803475027 /* Pods_TaskBuddy2.framework in Frameworks */,
+				B1277376212D81D500B443E1 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +127,7 @@
 		133EE4AB5B095BE867182267 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B1277375212D81D500B443E1 /* StoreKit.framework */,
 				3A6A19930ABE874EF29BFFD0 /* Pods_TaskBuddy2.framework */,
 				C6BCBF4FD9819A97BC9AD14B /* Pods_TaskBuddy2Tests.framework */,
 				CA553C88E354B54A81C59543 /* Pods_TaskBuddy2UITests.framework */,
@@ -117,6 +139,12 @@
 			isa = PBXGroup;
 			children = (
 				B1277363212D538200B443E1 /* HomeVC.swift */,
+				B127736D212D59F800B443E1 /* CreateUserVC.swift */,
+				B1277373212D74BB00B443E1 /* LoginVC.swift */,
+				B1277377212D862500B443E1 /* MasterVC.swift */,
+				B1277379212D870500B443E1 /* PrimarySplitViewController.swift */,
+				B127737D212D950500B443E1 /* AuthTestVC.swift */,
+				B127737F212E03E500B443E1 /* TaskDetailVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -126,6 +154,7 @@
 			children = (
 				B1B8AA4F21110D8E00FFCE7C /* Main.storyboard */,
 				B1B8AA5721110D9000FFCE7C /* LaunchScreen.storyboard */,
+				B1277371212D6D7200B443E1 /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -146,6 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				B1B8AACD2113B56D00FFCE7C /* DatabaseService.swift */,
+				B127736F212D5F3800B443E1 /* TBUserManager.swift */,
+				B127737B212D892B00B443E1 /* IAPService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -290,6 +321,11 @@
 				TargetAttributes = {
 					B1B8AA4721110D8E00FFCE7C = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 					B1B8AA5E21110D9000FFCE7C = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -394,13 +430,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TaskBuddy2/Pods-TaskBuddy2-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,11 +471,20 @@
 			files = (
 				B1B8AACE2113B56D00FFCE7C /* DatabaseService.swift in Sources */,
 				B1277369212D579100B443E1 /* Task+CoreDataClass.swift in Sources */,
+				B1277374212D74BB00B443E1 /* LoginVC.swift in Sources */,
+				B1277370212D5F3800B443E1 /* TBUserManager.swift in Sources */,
+				B1277378212D862500B443E1 /* MasterVC.swift in Sources */,
 				B127736C212D579100B443E1 /* TBUser+CoreDataProperties.swift in Sources */,
+				B127737E212D950500B443E1 /* AuthTestVC.swift in Sources */,
 				B1277364212D538200B443E1 /* HomeVC.swift in Sources */,
 				B1B8AA4C21110D8E00FFCE7C /* AppDelegate.swift in Sources */,
+				B127737A212D870500B443E1 /* PrimarySplitViewController.swift in Sources */,
 				B127736A212D579100B443E1 /* Task+CoreDataProperties.swift in Sources */,
+				B127736E212D59F800B443E1 /* CreateUserVC.swift in Sources */,
+				B127737C212D892B00B443E1 /* IAPService.swift in Sources */,
+				B1277380212E03E500B443E1 /* TaskDetailVC.swift in Sources */,
 				B127736B212D579100B443E1 /* TBUser+CoreDataClass.swift in Sources */,
+				B1277372212D6D7200B443E1 /* UserCell.swift in Sources */,
 				B1B8AA5421110D8E00FFCE7C /* TaskBuddy2.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -616,6 +661,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RF9G4QRLLG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseDatabase\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/leveldb-library\"",
+					"\"${PODS_ROOT}/Google-Mobile-Ads-SDK/Frameworks/frameworks\"",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TaskBuddy2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -635,6 +691,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RF9G4QRLLG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseDatabase\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/leveldb-library\"",
+					"\"${PODS_ROOT}/Google-Mobile-Ads-SDK/Frameworks/frameworks\"",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TaskBuddy2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

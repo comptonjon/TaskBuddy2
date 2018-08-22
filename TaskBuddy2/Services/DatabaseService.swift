@@ -12,13 +12,15 @@ import CoreData
 class DatabaseService {
     private init() {}
     
+    static let shared = DatabaseService()
+    
     // MARK: - Core Data stack
     
-    static func getContext() -> NSManagedObjectContext {
+    func context() -> NSManagedObjectContext {
         return persistentContainer.viewContext
     }
     
-    static var persistentContainer: NSPersistentContainer = {
+    var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation
          creates and returns a container, having loaded the store for the
@@ -47,7 +49,7 @@ class DatabaseService {
     
     // MARK: - Core Data Saving support
     
-    static func saveContext () {
+    func saveContext () {
         let context = persistentContainer.viewContext
         if context.hasChanges {
             do {
@@ -59,5 +61,20 @@ class DatabaseService {
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
         }
+    }
+    
+    func emailIsUnique(email: String) -> Bool {
+        let fetchRequest = NSFetchRequest<TBUser>(entityName: "TBUser")
+        let filter = email
+        fetchRequest.predicate = NSPredicate(format: "email == %@", filter)
+        do {
+            let results = try context().fetch(fetchRequest) as [TBUser]
+            if results.count > 0 {
+                return false
+            }
+        } catch {
+            print("Error")
+        }
+        return true
     }
 }

@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase
+import GoogleMobileAds
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,10 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        GADMobileAds.configure(withApplicationID: "ca-app-pub-3940256099942544~1458002511")
         FirebaseApp.configure()
         Database.database().isPersistenceEnabled = true
-        let peopleRef = Database.database().reference(withPath: "Tasks")
+        let peopleRef = Database.database().reference(withPath: "users")
         peopleRef.keepSynced(true)
+        IAPService.shared.fetchProducts()
         return true
     }
 
@@ -44,7 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
-        DatabaseService.saveContext()
+        DatabaseService.shared.saveContext()
     }
 
     

@@ -17,13 +17,15 @@ extension Task {
         return NSFetchRequest<Task>(entityName: "Task")
     }
 
-    @NSManaged public var isUrgent: Bool
-    @NSManaged public var isComplete: Bool
-    @NSManaged public var title: String?
-    @NSManaged public var details: String?
-    @NSManaged public var lastUpdatedTime: Double
     @NSManaged public var dateDue: NSDate?
+    @NSManaged public var details: String?
+    @NSManaged public var isComplete: Bool
+    @NSManaged public var isUrgent: Bool
+    @NSManaged public var lastUpdatedTime: Double
     @NSManaged public var rank: Int32
+    @NSManaged public var title: String?
+    @NSManaged public var timeCreated: Double
+    @NSManaged public var isSynced: Bool
     @NSManaged public var tbUser: TBUser?
 
 }
